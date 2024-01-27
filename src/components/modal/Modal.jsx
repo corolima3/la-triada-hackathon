@@ -10,8 +10,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    // maxWidth: '100%', // Ajusta el ancho máximo del modal según tu preferencia
-    // maxHeight: '100%', // Ajusta la altura máxima del modal según tu preferencia
+    height: '90%',
     overflow: 'hidden',
   },
 };
@@ -24,7 +23,7 @@ const CustomModal = ({ isOpen, closeModal, imageURL }) => {
       contentLabel="Imagen Modal"
       style={customStyles}
     >
-      <button onClick={closeModal} style={{ position: 'absolute', top: '10px', right: '10px', background: 'none', border: 'none', cursor: 'pointer', fontSize: '20px', color: '#fff' }}>X</button>
+      <button onClick={closeModal} style={{ position: 'absolute', top: '0.1rem', right: '2rem', background: 'none', border: 'none', cursor: 'pointer', fontSize: '2rem', color: 'black' }}>x</button>
       <img src={imageURL} alt="Imagen en modal" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
     </Modal>
   );
