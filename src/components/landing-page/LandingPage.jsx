@@ -10,8 +10,11 @@ import nftSeven from "../../assets/7.jpeg"
 import nftEight from "../../assets/8.jpeg"
 import nftNine from "../../assets/9.jpeg"
 import nftTen from "../../assets/10.jpeg"
+import emumu2 from "../../assets/img-celu/emumu2.jpg"
 import nftEleven from "../../assets/11.jpeg"
-import Modal from "../modal/Modal"
+import chuwbacca from "../../assets/img-celu/chuwbacca.jpg"
+import Modal from "../modal/Modal";
+
 
 const LandingPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,38 +38,38 @@ const LandingPage = () => {
 
   return (
     <body>
-        <header class="header">
-            <div class="contenedor contenido-header">
-                <div class="barra">
-                    <div class="logo">
-                        <h1 class="nombre-sitio">
-                            La Triada<span>Hackathon</span>
+        <header className="header">
+            <div className="contenedor contenido-header">
+                <div className="barra">
+                    <div className="logo">
+                        <h1 className="nombre-sitio">
+                             Triada<span>Hackathon</span>
                         </h1>
                     </div>
 
-                    <div class="contacto">
-                        <a class="telefono" href="tel:01-800-0000-000">01-800-0000-000</a>
+                    <div className="contacto">
+                        <a className="telefono" href="tel:01-800-0000-000">01-800-0000-000</a>
 
-                        <nav class="navegacion">
-                            <a class="link" href="#">Inicio</a>
-                            <a class="link" href="#nosotros">Navegacion</a>
-                            <a class="link" href="#modelos">Navegacion</a>
+                        <nav className="navegacion">
+                            <a className="link" href="#">Inicio</a>
+                            <a className="link" href="#nosotros">Navegacion</a>
+                            <a className="link" href="#modelos">Navegacion</a>
                         </nav>
                     </div>
                 </div>
-                <div class="slogan">
+                <div className="slogan">
                     <h1>NFT</h1>
                     <p>La Triada - Hackathon</p>
                 </div>
             </div>
         </header>
 
-        <section id="galeria" class="contenedor mt-5">
+        <section id="galeria" className="contenedor mt-5">
         <h2>Galería</h2>
 
-        <div class="galeria">
+        <div className="galeria">
           {galleryImages.map((image, index) => (
-            <div class="imagen" key={index} onClick={() => openModal(image)}>
+            <div className="imagen" key={index} onClick={() => openModal(image)}>
               <img src={image} alt={`imagen galeria ${index + 1}`} />
             </div>
           ))}
@@ -78,28 +81,40 @@ const LandingPage = () => {
           imageURL={selectedImage}
         />
       </section>
+      <section id="createNFT">
+  <h2 className='h2'>Cree su cuenta y comercialice imágenes, videos y audios</h2>
+  <p className='p'>En Triada, usted, particular aficionado al gaming, arte, anime, fútbol, etc., podrá subir su imagen, video, audio, y comercializarlos digitalmente. Mediante la tecnología blockchain.</p>
+  <div className="container">
+          <img src={emumu2} alt="emumu" />
+          <img src={chuwbacca} alt="chuwbacca" />
+        </div>
+  <p className='p'>Por ejemplo, si usted, aficionado del anime, cuenta con una colección de doscientos muñecos, estatuillas u otro tipo de colección de Pokémon, necesitará capturar las imágenes de cada uno, estilizarlas, y como último paso, registrarlas.</p>
+  <h6>¿Cómo se hace?</h6>
+  <p className='p'>Inicialmente debe registrarse <span className="link">aquí</span>. Se solicitará información personal: nombre, apellido, domicilio, teléfono, etc. Es importante recordar que para las operaciones de compra o venta, tiene la obligación de registrar una wallet. Por practicidad, recomendamos MetaMask.</p>
+  <p className='p'>Posterior al registro, en su perfil encontrará un botón, Crear NFT, en la parte superior derecha. Para más información, descargue el manual de instrucciones.</p>
+</section>
 
-      <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <div class="logo">
-                    <h1 class="nombre-sitio">
+      <footer className="footer">
+        <div className="contenedor">
+            <div className="barra">
+                <div className="logo">
+                    <h1 className="nombre-sitio">
                         La Triada<span>Hackathon</span>
                     </h1>
                 </div>
 
-                <div id="contacto" class="contacto">
+                <div id="contacto" className="contacto">
 
-                    <nav class="navegacion">
-                        <a class="link" href="#">Inicio</a>
-                        <a class="link" href="#">Nosotros</a>
-                        <a class="link" href="#">Contacto</a>
+                    <nav className="navegacion">
+                        <a className="link" href="#">Inicio</a>
+                        <a className="link" href="#">Nosotros</a>
+                        <a className="link" href="#">Contacto</a>
                     </nav>
                 </div>
             </div>
         </div>
 
-        <p class="copyright">Todos los derechos reservados 2024 &copy; </p>
+        <p className="copyright">Todos los derechos reservados 2024 &copy; </p>
     </footer>
 
     </body>

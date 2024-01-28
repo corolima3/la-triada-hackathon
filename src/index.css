@@ -29,15 +29,27 @@ h1, h2, h3 {
 h1{
   font-size: 4.8rem;
 }
-h2 {
-  font-size: 5.8rem;
+.h2 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  font-weight: 600;
+
 }
 h3 {
   font-size: 5rem;
 }
+h6{
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+.p{
+  font-size: 1.35rem;
+}
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   display: block;
@@ -232,7 +244,28 @@ img {
       grid-row: 1 / 3;
   }
 }
+#createNFT{
+  background: #fff;
+  width: 70vw;
+  margin: 0 auto;
+padding-inline: 4rem;
+padding-block: 2rem;
+margin-top: 3rem;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+.container img{
+  width: 100%;
+  object-fit: cover;
 
+}
+.link{
+  text-decoration:underline;
+color: blue;
+}
 .footer {
   height: 50rem;
   background-image: url(../src//assets/2/background-4.png);
@@ -250,6 +283,7 @@ img {
 .footer a {
   color: var(--blanco);
   font-size: 2rem;
+
 }
 
 .copyright {
@@ -258,4 +292,18 @@ img {
   margin: 5rem 0 0 0;
   font-size: 2rem;
   padding: 1rem;
+}
+ /* media quaries*/
+
+ @media screen and (max-width: 900px) { /*unidad "px" */
+  #createNFT{
+
+    width: 85vw;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-block: 4rem;
+  }
 }
