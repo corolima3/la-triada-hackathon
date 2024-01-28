@@ -14,6 +14,7 @@ import emumu2 from "../../assets/img-celu/emumu2.jpg"
 import nftEleven from "../../assets/11.jpeg"
 import chuwbacca from "../../assets/img-celu/chuwbacca.jpg"
 import Modal from "../modal/Modal";
+import {Link} from "react-router-dom"
 
 
 const LandingPage = () => {
@@ -52,7 +53,7 @@ const LandingPage = () => {
 
                         <nav className="navegacion">
                             <a className="link" href="#">Inicio</a>
-                            <a className="link" href="#nosotros">Navegacion</a>
+                            <a className="link" href="#nosotros"><Link to={"/about"} >Nosotros</Link></a>
                             <a className="link" href="#modelos">Navegacion</a>
                         </nav>
                     </div>
