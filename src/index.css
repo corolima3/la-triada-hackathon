@@ -35,8 +35,11 @@ h1{
   font-weight: 600;
 
 }
-h3 {
-  font-size: 5rem;
+h4 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  border-bottom:3px solid #f6f8fa;
 }
 h6{
   font-size: 1.8rem;

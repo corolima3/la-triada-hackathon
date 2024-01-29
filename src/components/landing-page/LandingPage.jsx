@@ -70,7 +70,7 @@ const LandingPage = () => {
       </header>
 
       <section id="galeria" className="contenedor mt-5">
-        <h2>Galería</h2>
+        <h4>GALLERIA</h4>
 
         <div className="galeria">
           {galleryImages.map((image, index) => (
@@ -87,6 +87,7 @@ const LandingPage = () => {
         />
       </section>
       <section id="createNFT" className='contenedor'>
+        <h4>MINTEAR NFT PARA COLECCIONISTAS</h4>
         <h2 className='h2'>Cree su cuenta y comercialice imágenes, videos y audios</h2>
         <p className='p'>En Triada, usted, particular aficionado al gaming, arte, anime, fútbol, etc., podrá subir su imagen, video, audio, y comercializarlos digitalmente. Mediante la tecnología blockchain.</p>
         <div className="container">
