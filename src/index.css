@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -56,6 +57,7 @@ a {
 .navegacion .link{
   text-shadow: 1px 2px 8px #000;
 color: white;
+width: max-content;
 
 }
 
@@ -150,7 +152,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 1061px) { 
+@media screen and (max-width: 1200px) { 
   .contacto {
      display: block;
   }

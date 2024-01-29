@@ -59,6 +59,7 @@ const LandingPage = () => {
                 <a className="link" href="#">Inicio</a>
                 <Link className="link" href="#nosotros" to={"/about"} >Nosotros</Link>
                 <a className="link" href="#galeria">Galleria</a>
+                <a className="link" href="#createNFT">Mintear NFT</a>
               </nav>
             </div>
           </div>
